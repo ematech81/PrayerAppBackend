@@ -6,7 +6,7 @@ const {
 } = require("../controllers/comment.controllers");
 
 const { body } = require("express-validator");
-const { validate } = require("../middleware/validate");
+const { validate } = require("../middlewares/validateRequest");
 
 // create root comment or reply
 router.post(
